@@ -7,4 +7,10 @@
 development:
   adapter: postgresql
   host: localhost
+  username: <%= ENV['POSTGRES_USERNAME'] %>
+  password: <%= ENV['POSTGRES_PASSWORD'] %>
   database: big_articles-development
+
+test:
+  adapter: sqlite3
+  database: 'db/test.sqlite3'
