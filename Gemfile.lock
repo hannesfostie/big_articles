@@ -35,7 +35,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
-    algoliasearch (1.14.0)
+    algoliasearch (1.15.0)
       httpclient (~> 2.8.3)
       json (>= 1.5.1)
     arel (6.0.4)
@@ -178,7 +178,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  algoliasearch
+  algoliasearch (~> 1.15.0)
   byebug
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
