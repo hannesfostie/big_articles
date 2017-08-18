@@ -1,6 +1,11 @@
 require 'rails_helper'
+require 'algolia/webmock'
 
 RSpec.describe Article, type: :model do
+  before(:all) do
+    Algolia.init(application_id: 'foo', api_key: 'bar')
+  end
+
   let(:article) { Article.new title: 'my title', slug: 'a-slug', content: 1.upto(1000).to_a.join('.') }
 
   context "create" do

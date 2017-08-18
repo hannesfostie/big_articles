@@ -52,6 +52,7 @@ end
 group :test do
   gem 'sqlite3'
   gem 'test_after_commit'
+  gem 'webmock'
 end
 
 gem 'puma'
